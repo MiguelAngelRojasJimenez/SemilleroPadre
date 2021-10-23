@@ -60,7 +60,7 @@ public class ComicDTO implements Serializable{
 	 */
 	public String getNombre() {
 		return nombre;
-	}
+	} 
 	/**
 	 * Metodo encargado de modificar el valor del atributo nombre
 	 * @param nombre El nuevo nombre a modificar.

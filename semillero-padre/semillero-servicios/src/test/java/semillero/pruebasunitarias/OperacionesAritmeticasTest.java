@@ -19,26 +19,26 @@ import junit.framework.Assert;
 
 
 
-public class OperacionesAritmeticasTest {
+public class OperacionesAritmeticasTest { 
 	
 	private final static Logger log = Logger.getLogger(OperacionesAritmeticasTest.class);
 	
 	//prueba unitaria exitosa
 	//mvn test  -Dmaven.test.skip=false para correrlo en consola
-	@BeforeTest
+//	@BeforeTest
 	//los log son para saber donde falla el código 
 	public void inicializar() {
 		BasicConfigurator.configure(); //inicializa el loger con una configuracion básica
 		log.info("::::::::::::::::::Inicio Prueba unitaria::::::::::::::::");
 	}
-	/**
+	/** 
 	 * 
 	 * Metodo encargado de probar le resltado de la suma 
 	 * <b>Caso de Uso</b> gestionar operaciones
 	 * @author MiguelAngel
 	 *
 	 */
-	@Test
+	//@Test
 	public void validarResultadoSumaExitosa () {
 		log.info("Inicia Ejecución del metodo validarResultadoSumaExitosa()");
 		
@@ -51,7 +51,7 @@ public class OperacionesAritmeticasTest {
 		log.info("Finaliza la Ejecucion del metodo validarResultadoSumaExitosa()");
 	}
 	//@Test(enable =true) prueba inactiva
-	@Test
+//	@Test
 	public void validarResultadoSumaFallida() {
 		log.info("Iniicia ejecucion metdo validar sumafalida");
 		int numero1=400;
@@ -70,7 +70,7 @@ public class OperacionesAritmeticasTest {
 		
 		log.info("Finaliza la ejecucion del resltado suma fallida");
 	}
-	@AfterTest
+//	@AfterTest
 	public void finalizaPruebasUnitarias() {
 		log.info("finaliza las pruebas");
 	}

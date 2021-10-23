@@ -12,7 +12,7 @@ public class CreacionVehiculoRest {
 		 Vehiculo vehiculo1 = new Vehiculo("amarillo",12000);
 		 vehiculo1.setColor("Amarillo");
 		 vehiculo1.setNumeroasientos(2);
-		 vehiculo1.setNumeroLlantas(4);
+		 vehiculo1.setNumeroLlantas(4); 
 		 vehiculo1.setRequiereLicencia(true);
 		 vehiculo1.setTipovehiculo(TipoVehiculoEnum.TERRESTRE);
 		 

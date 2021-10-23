@@ -279,7 +279,7 @@ public class Comic implements Serializable{
 
 	
 	/** 
-	 * @see java.lang.Object#toString()
+	 * @see java.lang.Object# toString()
 	 */
 	@Override
 	public String toString() {
