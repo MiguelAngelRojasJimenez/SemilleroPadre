@@ -15,8 +15,8 @@ import junit.framework.Assert;
  * @author Miguel Angel
  * Descripcion Clase que determina las pruebas unitarias gestinar operaciones aritmeticas
  *
- */
-
+ 
+*/
 
 
 public class OperacionesAritmeticasTest { 
@@ -25,7 +25,7 @@ public class OperacionesAritmeticasTest {
 	
 	//prueba unitaria exitosa
 	//mvn test  -Dmaven.test.skip=false para correrlo en consola
-//	@BeforeTest
+//@BeforeTest
 	//los log son para saber donde falla el código 
 	public void inicializar() {
 		BasicConfigurator.configure(); //inicializa el loger con una configuracion básica
@@ -37,7 +37,7 @@ public class OperacionesAritmeticasTest {
 	 * <b>Caso de Uso</b> gestionar operaciones
 	 * @author MiguelAngel
 	 *
-	 */
+	*/ 
 	//@Test
 	public void validarResultadoSumaExitosa () {
 		log.info("Inicia Ejecución del metodo validarResultadoSumaExitosa()");
@@ -51,7 +51,7 @@ public class OperacionesAritmeticasTest {
 		log.info("Finaliza la Ejecucion del metodo validarResultadoSumaExitosa()");
 	}
 	//@Test(enable =true) prueba inactiva
-//	@Test
+	//@Test
 	public void validarResultadoSumaFallida() {
 		log.info("Iniicia ejecucion metdo validar sumafalida");
 		int numero1=400;
@@ -70,7 +70,7 @@ public class OperacionesAritmeticasTest {
 		
 		log.info("Finaliza la ejecucion del resltado suma fallida");
 	}
-//	@AfterTest
+	//@AfterTest
 	public void finalizaPruebasUnitarias() {
 		log.info("finaliza las pruebas");
 	}
