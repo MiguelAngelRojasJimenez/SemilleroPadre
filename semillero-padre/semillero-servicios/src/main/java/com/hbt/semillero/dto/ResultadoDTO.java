@@ -1,5 +1,4 @@
 package com.hbt.semillero.dto;
-
 import java.io.Serializable;
 
 /**
@@ -23,6 +22,10 @@ public class ResultadoDTO implements Serializable {
 	 */
 	private String mensajeEjecucion;
 
+	public ResultadoDTO() {
+		
+	}
+	
 	/**
 	 * Constructor de la clase.
 	 * 

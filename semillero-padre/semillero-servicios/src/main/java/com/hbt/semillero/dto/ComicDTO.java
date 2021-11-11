@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import com.hbt.semillero.enums.EstadoEnum;
 import com.hbt.semillero.enums.TematicaEnum;
 
-public class ComicDTO implements Serializable{
+public class ComicDTO extends ResultadoDTO implements Serializable{
 
 	/**
 	 * Atributo que determina  

@@ -16,7 +16,6 @@ import javax.persistence.Table;
 
 import com.hbt.semillero.enums.EstadoEnum;
 import com.hbt.semillero.enums.TematicaEnum;
-import com.hbt.semillero.enums.TipoVehiculoEnum;
 
 /**
  * descripcion clase que determina el mapeo de la tabla comic de la BD_SEMILLERO

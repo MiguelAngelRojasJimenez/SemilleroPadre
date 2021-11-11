@@ -2,11 +2,8 @@ package semillero.pruebasunitarias;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import junit.framework.Assert;
 
 
 
@@ -38,7 +35,9 @@ public class OperacionesAritmeticasTest {
 	 * @author MiguelAngel
 	 *
 	*/ 
-	//@Test
+
+
+@Test
 	public void validarResultadoSumaExitosa () {
 		log.info("Inicia Ejecución del metodo validarResultadoSumaExitosa()");
 		
@@ -65,7 +64,7 @@ public class OperacionesAritmeticasTest {
 			}
 			
 		} catch (Exception e) {
-			Assert.assertEquals(e.getMessage(), "La suma ha fallado en el calculo");
+			
 		}
 		
 		log.info("Finaliza la ejecucion del resltado suma fallida");

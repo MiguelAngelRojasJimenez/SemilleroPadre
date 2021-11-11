@@ -1,0 +1,35 @@
+<div class="container">
+    <pre>{{ comicDTO | json }}</pre>
+    <pre>{{ nombre | json }}</pre>
+    <h1>Gestionar Compra Comic</h1>
+        <hr>        
+        
+        <div class="row">
+            <div class="col-6">
+                <label for="nombreComic">Nombre:</label>
+                <input type="text" class="form-control" id="nombreComic" maxlength="50"  formControlName="nombre"
+                  [ngClass]=" { 'is-invalid' : submitted && f.nombre.errors } "  >
+                <div *ngIf = "Submitted && f.nombre.errors">
+                    <span class = "text-danger" *ngIf = "f.nombre.errors.requiered" >Campor requerido</span>
+                    <span class = "text-danger" *ngIf = "f.nombre.errors.maxlength" >El campo solo recibe 50 caracteres.</span>
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="cantidadComic">Numero de Comics:</label>
+                <input type="text" class="form-control" id="cantidaComic" formControlName="cantidadComic" minlength="1" [ngClass]="{ 'is-invalid' : submitted && f.cantidadComic.errors }">
+                <span class="text-danger" *ngIf="f.cantidadComic.errors.requiered"> Campo requerido </span>
+                <span class="text-danger" *ngIf="f.cantidadComic.errors.minlength"> La cantidad no puede ser 0 </span>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-6">
+                <span></span>
+            </div>
+            <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary" (click)="comprarComic()">Comprar</button>
+                <button type="button" class="btn btn-primary" (click)="cancelar">Cancelar</button>
+            </div>
+        </div>
+</div>
