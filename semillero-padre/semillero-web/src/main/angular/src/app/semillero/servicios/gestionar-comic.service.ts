@@ -21,9 +21,9 @@ export class GestionarComicService extends AbstractService {
     return this.httpClient.post('http://localhost:8085/semillero-servicios/rest/gestionarComic/crearComic',comicDTO);
   }
   
- // public comprarComic(idComic: number,cantidadComprada:number) : Observable<any>{
+  public comprarComic(idComic: number,cantidadComprada:number) : Observable<any>{
 
-  //  return this.httpClient.post('http://localhost:8085/semillero-servicios/rest/gestionarCompraComic/comprarComic', idComic, cantidadComprada);
- // }
+    return this.httpClient.post('http://localhost:8085/semillero-servicios/rest/gestionarCompraComic/comprarComic', idComic, cantidadComprada);
+  }
   
 }

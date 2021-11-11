@@ -11,12 +11,13 @@ export class GestionarCompraComponent implements OnInit {
   constructor( private gestionComicsService : GestionarComicService) { }
 
   ngOnInit() {
-   // this.comprarComic
+    this.comprarComic
   }
 
-//  public comprarComic(){
- //   this.gestionComicsService.comprarComic().subscribe(data =>{
-  //    if (data.exitoso){}
-   // })
+ public comprarComic(){
+    this.gestionComicsService.comprarComic().subscribe(data =>{
+      if (data.exitoso){}
+    })
 
+}
 }
